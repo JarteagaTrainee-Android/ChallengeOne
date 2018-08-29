@@ -12,24 +12,5 @@ public class Main {
 
 
 
-        /*
-        Game gameLogic = new Game();
-        ArrayList<Character> listOfLetter = new ArrayList<Character>();
-        String movieName="Jumanji";
-        movieName.toUpperCase();
-
-        listOfLetter.add('J');
-        listOfLetter.add('U');
-        listOfLetter.add('I');
-
-
-
-        ArrayList<Integer> foundedLettersPosition=new ArrayList<Integer>();
-        foundedLettersPosition=gameLogic.findPositions(movieName.toUpperCase(),listOfLetter);
-
-        String result=gameLogic.hideLetters(movieName.toUpperCase(),foundedLettersPosition);
-        System.out.println(result+ "("+result.length()+")");
-*/
-
     }
 }

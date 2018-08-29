@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b94f769-c34c-41f3-9f39-68d957ca309d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/movies.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/applaudostudio/logic/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/applaudostudio/logic/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/applaudostudio/logic/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/applaudostudio/logic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/applaudostudio/logic/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/applaudostudio/logic/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/applaudostudio/logic/Player.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,12 +37,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6636" />
+          <entry key="java" value="7572" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6636" />
+          <entry key="JAVA" value="7572" />
         </counts>
       </usages-collector>
     </session>
@@ -54,11 +52,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/applaudostudio/logic/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="117" column="51" lean-forward="true" selection-start-line="117" selection-start-column="51" selection-end-line="117" selection-end-column="51" />
+            <state relative-caret-position="219">
+              <caret line="149" column="33" selection-start-line="149" selection-start-column="33" selection-end-line="149" selection-end-column="33" />
               <folding>
                 <element signature="e#135#136#0" expanded="true" />
                 <element signature="e#172#173#0" expanded="true" />
+                <element signature="method#hideLetters#0;class#Game#0" />
+                <element signature="method#replaceLetters#0;class#Game#0" />
+                <element signature="e#1858#1869#0" expanded="true" />
+                <element signature="e#2194#2205#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/applaudostudio/logic/Reader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="26" column="42" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="42" />
+            <state relative-caret-position="238">
+              <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,13 +86,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/applaudostudio/logic/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="34" column="34" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="34" />
+            <state relative-caret-position="637">
+              <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
               <folding>
-                <element signature="e#178#179#0" expanded="true" />
-                <element signature="e#223#224#0" expanded="true" />
-                <element signature="e#113#114#0" expanded="true" />
-                <element signature="e#142#143#0" expanded="true" />
+                <element signature="e#138#139#0" expanded="true" />
+                <element signature="e#167#168#0" expanded="true" />
+                <element signature="e#208#209#0" expanded="true" />
+                <element signature="e#244#245#0" expanded="true" />
+                <element signature="e#297#298#0" expanded="true" />
+                <element signature="e#332#333#0" expanded="true" />
+                <element signature="e#402#403#0" expanded="true" />
+                <element signature="e#450#451#0" expanded="true" />
+                <element signature="e#506#507#0" expanded="true" />
+                <element signature="e#544#545#0" expanded="true" />
+                <element signature="e#620#621#0" expanded="true" />
+                <element signature="e#674#675#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+            <state relative-caret-position="135">
+              <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -176,7 +186,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535579928527" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535584150670" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -227,13 +237,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1249" height="777" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24937862" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24937862" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
@@ -241,7 +252,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.329927" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.329927" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.329927" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -291,23 +302,23 @@
     <entry file="file://$PROJECT_DIR$/ChallengeOne.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/movies.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        <state relative-caret-position="135">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movies.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/applaudostudio/logic/Reader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="26" column="42" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="42" />
+        <state relative-caret-position="238">
+          <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -316,24 +327,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/applaudostudio/logic/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="34" column="34" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="34" />
+        <state relative-caret-position="637">
+          <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
           <folding>
-            <element signature="e#178#179#0" expanded="true" />
-            <element signature="e#223#224#0" expanded="true" />
-            <element signature="e#113#114#0" expanded="true" />
-            <element signature="e#142#143#0" expanded="true" />
+            <element signature="e#138#139#0" expanded="true" />
+            <element signature="e#167#168#0" expanded="true" />
+            <element signature="e#208#209#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/applaudostudio/logic/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="117" column="51" lean-forward="true" selection-start-line="117" selection-start-column="51" selection-end-line="117" selection-end-column="51" />
+        <state relative-caret-position="219">
+          <caret line="149" column="33" selection-start-line="149" selection-start-column="33" selection-end-line="149" selection-end-column="33" />
           <folding>
             <element signature="e#135#136#0" expanded="true" />
             <element signature="e#172#173#0" expanded="true" />
+            <element signature="method#hideLetters#0;class#Game#0" />
+            <element signature="method#replaceLetters#0;class#Game#0" />
+            <element signature="e#1858#1869#0" expanded="true" />
+            <element signature="e#2194#2205#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -4,12 +4,6 @@ import java.util.ArrayList;
 
 public class Player {
     private int mTries;
-    private ArrayList<Character> mListLetters;
-
-    public Player() {
-        mListLetters =new ArrayList<Character>();
-    }
-
 
     public int getmTries() {
         return mTries;
@@ -27,6 +21,23 @@ public class Player {
         this.mListLetters = mListLetters;
     }
 
+    public ArrayList<Character> getmCorrectLetters() {
+        return mCorrectLetters;
+    }
+
+    public void setmCorrectLetters(ArrayList<Character> mCorrectLetters) {
+        this.mCorrectLetters = mCorrectLetters;
+    }
+
+    private ArrayList<Character> mListLetters;
+    private ArrayList<Character> mCorrectLetters;
+
+
+    public Player() {
+        mListLetters =new ArrayList<Character>();
+        mCorrectLetters = new ArrayList<Character>();
+    }
+
     /***
      * add a letter in the list of letters
      * @param letter new letter to be added
@@ -39,5 +50,15 @@ public class Player {
         }
         return false;
     }
+
+
+    public boolean addCorrecLetterToList(Character letter){
+        if(!this.mCorrectLetters.contains(letter)){
+            mCorrectLetters.add(letter);
+            return true;
+        }
+        return false;
+    }
+
 
 }

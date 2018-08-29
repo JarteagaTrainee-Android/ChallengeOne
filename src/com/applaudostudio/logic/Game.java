@@ -15,7 +15,7 @@ public class Game {
      * @param movieName the name of a movie
      * @return a string with the hide name or the name if you found the full name of a movie.
      */
-   public String hideLetters(String movieName, ArrayList<Character> letterList){
+   private String hideLetters(String movieName, ArrayList<Character> letterList){
        String hideWord = "";
        char[] nameArray =null;
        nameArray=movieName.toCharArray();
@@ -48,6 +48,7 @@ public class Game {
        for(int i=0;i<movieName.length();i++){
                 if(movieName.toCharArray()[i] == letter){
                     hiddenArray[i]=letter;
+
                 }
             }
         result=String.valueOf(hiddenArray);
@@ -61,27 +62,53 @@ public class Game {
      * @param lettersList list of letters added by User
      * @return number of incorrect letters
      */
-   public int incorrectLetters(String word,ArrayList<Character> lettersList){
+   private  ArrayList<Character> getIncorrectLetters(String word,ArrayList<Character> lettersList){
        int counter=0;
+       ArrayList<Character> incorrectList = new ArrayList<Character>();
        for(Character letter : lettersList){
            if(!word.contains(letter.toString()))
-               counter++;
+               incorrectList.add(letter);
        }
-       return counter;
+       return incorrectList;
    }
+
+
+   private  ArrayList<Character> getCorretLetters(String word, ArrayList<Character> lettersList){
+       ArrayList<Character> correctList = new ArrayList<Character>();
+       Player gamer = new Player();
+       for(Character letter : lettersList){
+           if(word.contains(letter.toString())){
+               gamer.addCorrecLetterToList(letter);
+           }
+
+       }
+       return gamer.getmCorrectLetters();
+   }
+
+
+   private String printIncorrect(ArrayList<Character> lettersList){
+       String result = "";
+       for(Character letter : lettersList){
+           result += letter+", ";
+       }
+
+       return result;
+   }
+
 
     /***
      * Function to randome choose a movie of the list
      * @param listOfMovies
      * @return
      */
-   public String randomChooser(ArrayList<String> listOfMovies){
+   private String randomChooser(ArrayList<String> listOfMovies){
        int randomIndex = 0;
        String randomWord=" ";
        randomIndex = (int) (Math.random() * listOfMovies.size());
        randomWord=listOfMovies.get(randomIndex);
        return randomWord;
    }
+
 
 
 
@@ -109,21 +136,18 @@ public class Game {
                Character letter;
                letter = scanner.next().charAt(0);
                player.addLetterToList(letter);
-
-
                Gueesed = this.hideLetters(randomMovieName,player.getmListLetters());
-
                System.out.println("You Are Guessing: "+Gueesed);
-
+               System.out.println("You Have guessed: ("+this.getCorretLetters(randomMovieName,player.getmListLetters()).size()+") Incorrect Letters: "+this.printIncorrect(this.getIncorrectLetters(randomMovieName,player.getmListLetters())));
                if(Gueesed.equals(randomMovieName)){
                    System.out.println("***** WOOOOOOOOH!! YOU ARE THE WINNER *****");
                    return true;
                }
 
-           }while(this.incorrectLetters(randomMovieName,player.getmListLetters())<this.MaxIntent);
+           }while(this.getIncorrectLetters(randomMovieName,player.getmListLetters()).size()<this.MaxIntent);
 
 
-           System.out.println("DAH!! , YOU LOSE");
+           System.out.println("DOH!! , YOU LOSE");
 
             return false;
 
