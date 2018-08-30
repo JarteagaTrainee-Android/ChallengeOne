@@ -3,22 +3,21 @@ package com.applaudostudio.logic;
 import java.util.ArrayList;
 
 class Player {
+    private ArrayList<Character> mListLetters;
+    private ArrayList<Character> mCorrectLetters;
+
     Player() {
         mListLetters =new ArrayList<>();
         mCorrectLetters = new ArrayList<>();
     }
 
-
-
     ArrayList<Character> getmListLetters() {
         return mListLetters;
     }
-
     ArrayList<Character> getmCorrectLetters() {
         return mCorrectLetters;
     }
-    private ArrayList<Character> mListLetters;
-    private ArrayList<Character> mCorrectLetters;
+
 
     /***
      * add a letter in the list of letters
